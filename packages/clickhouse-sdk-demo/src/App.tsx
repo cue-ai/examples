@@ -3,7 +3,7 @@ import {createAnalyticsClient} from "@cue-ai/analytics-client-web";
 
 const analyticsClient = createAnalyticsClient({
     apiKey: "your-api-key", //put your api key here
-    organizationId: "test", //put your organization here ,
+    organizationId: "test_add", //put your organization here ,
 });
 
 export const App = () => {
@@ -13,7 +13,7 @@ export const App = () => {
                 description: "User clicked the button",
                 clickTime: new Date().toISOString(),
             });
-            alert("Succesfully Logged Data")
+            alert("Successfully Logged Data")
         } catch (err) {
             console.log(err);
         }
