@@ -1,5 +1,5 @@
 {
-  "name": "clickhouse-sdk-demo",
+  "name": "@cue-ai-examples/clickhouse-sdk-example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
