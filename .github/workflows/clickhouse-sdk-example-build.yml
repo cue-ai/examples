@@ -1,4 +1,4 @@
-name: Test Mason
+name: Clickhouse SDK Build
 on: push
 jobs:
   build:
@@ -8,4 +8,5 @@ jobs:
       - name: Install modules
         run: yarn
       - name: Run tests
-        run: yarn workspace @clickhouse-sdk-example build
+        run: yarn workspace @cue-ai-examples/clickhouse-sdk-example build
+
