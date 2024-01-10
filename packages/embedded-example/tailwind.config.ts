@@ -1,9 +1,11 @@
 import type { Config } from 'tailwindcss'
 import theme from "tailwindcss/defaultTheme";
 import colors from "tailwindcss/colors";
+import {defaultTheme} from "./default-config";
 
 export const cueBorderRadius = {
   dashboardCard: "var(--cue-dashboard-card-radius)",
+  ...defaultTheme.borderRadius,
 };
 
 export const cueFontSize = {
@@ -12,6 +14,7 @@ export const cueFontSize = {
   "dashboard-h2": "var(--cue-dashboard-h2-size)",
   "dashboard-card-body": "var(--cue-dashboard-card-body-size)",
   "dashboard-card-title": "var(--cue-dashboard-card-title-size)",
+  ...theme.fontSize,
 };
 
 export const cueColors = {
@@ -44,6 +47,7 @@ export const cueFontFamily = {
 
 export const cuePadding = {
   dashboardCard: "var(--cue-dashboard-card-padding)",
+  ...defaultTheme.spacing,
 };
 
 export const cueSafelist = [
@@ -87,18 +91,17 @@ const config: Config = {
   ],
   // important: '#__next',
   theme: {
-    ...theme,
     safelist: cueSafelist,
     plugins: [],
-    // borderRadius: cueBorderRadius,
-    // padding: cuePadding,
-    // ringColor, stroke, fill,
-    // textColor,
-    // fontSize,
-    // spacing, height,width,
-    // strokeWidth, backgroundColor,
+    borderRadius: cueBorderRadius,
+    padding: cuePadding,
+    boxShadowColor: defaultTheme.boxShadowColor,
+    boxShadow: defaultTheme.boxShadow,
+    dropShadow: defaultTheme.dropShadow,
+    borderColor: defaultTheme.borderColor,
+    cursor: defaultTheme.cursor,
+    borderWidth: defaultTheme.borderWidth,
     colors: {
-
       ...cueColors,
       transparent: 'var(--transparent)',
       white: 'var(--white)',
@@ -318,7 +321,7 @@ const config: Config = {
 
   safelist: cueSafelist,
   corePlugins: {
-    preflight: false
+    preflight: true,
   }
 };
 export default config;

@@ -319,7 +319,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@cue-ai-examples/embedded-example@workspace:packages/embedded-example"
   dependencies:
-    "@cue-ai/embedded": "npm:0.0.0-alpha.25"
+    "@cue-ai/embedded": "npm:0.0.0-alpha.27"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
@@ -340,9 +340,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cue-ai/embedded@npm:0.0.0-alpha.25":
-  version: 0.0.0-alpha.25
-  resolution: "@cue-ai/embedded@npm:0.0.0-alpha.25"
+"@cue-ai/embedded@npm:0.0.0-alpha.27":
+  version: 0.0.0-alpha.27
+  resolution: "@cue-ai/embedded@npm:0.0.0-alpha.27"
   dependencies:
     "@radix-ui/react-alert-dialog": "npm:^1.0.5"
     "@radix-ui/react-checkbox": "npm:^1.0.4"
@@ -373,7 +373,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ">=16.6.0"
-  checksum: 4142bd7341713da3c5215addd2f51da29ddeb8d0ca291bd68eaf6e8965c0ce940db375d550a2e2355a96f0b0fb64e2b2ec31d5cac8032e83b3aa466b1cf1e432
+  checksum: 4d387f306e243123ebd4a59e72c9f83da0a60ada321ccc3be09559215c323ca59c5a21ea23593aeeac54f410a77d9762ff862d8b604eb1e9019f1b45612b339c
   languageName: node
   linkType: hard
 
