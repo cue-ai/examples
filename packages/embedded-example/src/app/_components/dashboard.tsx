@@ -8,12 +8,12 @@ export const Dashboard = () => {
     return null;
   }
   return (
-    <EmbeddedProvider organizationId="clp1uh44t0005l80f2f5gcz7c">
+    <EmbeddedProvider organizationId="clqeecp0i0000jk0fxq8mewbz">
       <EmbeddedDashboardProvider
-        dashboardId="clq746axh0003dyi7mdelhuwb"
-        customerId="acme-inc"
+        dashboardId="clqzzomj30000kw0f92tve6uo"
+        customerId="clqeecp0i0003jk0f5od55fjp"
       >
-        <EmbeddedItemsRenderer/>
+        <EmbeddedItemsRenderer />
       </EmbeddedDashboardProvider>
     </EmbeddedProvider>
   );
